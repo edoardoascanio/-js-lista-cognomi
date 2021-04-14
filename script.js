@@ -10,16 +10,14 @@ while (i < listaCognomi.length) {
     var cognomeUtente = listaCognomi[i];
     var cognomeEsistente = false
 
-    
-
-    for (var j = 0; j < datiFiltrati.length; j++)
+    for (var j = 0; j < datiFiltrati.length; j++){
         var cognomeInserito = datiFiltrati[j];
-       
 
-    if (cognomeUtente === cognomeInserito) {
-        cognomeEsistente = true
+        if (cognomeUtente === cognomeInserito) {
+            cognomeEsistente = true
+        }
     }
-      
+
     datiFiltrati.sort();
     if (!cognomeEsistente) {
         datiFiltrati.push(cognomeUtente)
