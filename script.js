@@ -2,6 +2,9 @@ var cognomeUtente = prompt("Inserisci il tuo cognome")
 var listaCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 var datiFiltrati = []
 var cognomeInserito = datiFiltrati.push(cognomeUtente);
+var primaLettera = cognomeUtente.slice(0, 1);
+var restoParola = cognomeUtente.slice(1);
+cognomeUtente = primaLettera.toUpperCase() + restoParola;
 
 var i = 0;
 
